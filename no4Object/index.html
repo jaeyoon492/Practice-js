@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Something</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <h1>Object</h1>
+    <div>
+      <h2>
+        //object를 만들땐 {}안에 값을 넣으면 된다.<br />
+        //javariInfo는 상수지만 안에 name은 변수다.<br />
+        <br />
+        const javariInfo = {<br />
+        name: javeri,<br />
+        age: 27,<br />
+        gender: "Male",<br />
+        isHandsome: true,<br />
+        <br />
+        favMovies: ["세얼간이", "빅쇼트", "300"],<br />
+        //object 안에 배열을 넣는게 가능하다.<br />
+        <br />
+        ProgramingLv: {<br />
+        java: 1,<br />
+        css: 1,<br />
+        html: 1,<br />
+        js: 0.5,<br />
+        },<br />
+        //object안에 object를 넣는것도 가능하다.<br />
+        <br />
+        favFood: [<br />
+        {<br />
+        name: 삼겹살,<br />
+        fatty: true,<br />
+        },<br />
+        {<br />
+        name: 메밀소바,<br />
+        fatty: false,<br />
+        },<br />
+        ], //favFood의 테두리<br />
+        }; //javariInfo의 object테두리<br />
+        <br />
+        console.log(javariInfo);<br />
+        //javariInfo의 모든 정보를 출력<br />
+        <br />
+        console.log(javariInfo.gender);<br />
+        //원하는 정보만 출력<br />
+        <br />
+        javariInfo.gender = "Female";<br />
+        //object안쪽은 변수 형태로 수정이 가능하다.<br />
+        <br />
+        console.log(javariInfo.gender);<br />
+        //Female로 출력됨<br />
+      </h2>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
