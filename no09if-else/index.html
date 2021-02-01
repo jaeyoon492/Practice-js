@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>if-eles</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+
+  <body>
+    <h1 id="title">TA DA!</h1>
+    <h2>
+      //if가 참이면 블럭안에 내용을 실행하고 아니면 else의 블럭을 실행한다.<br />
+      //아는게 나오니까 참좋네 ㅎㅎ;<br />
+      //equals 은 ===<br />
+      if (10 === "10") {<br />
+      console.log("true");<br />
+      } else if ("10" === "10") {<br />
+      console.log("yes");<br />
+      } else {<br />
+      console.log("no");<br />
+      }<br />
+      <br />
+      //&&은 좌변과 우변의 모두 true 일때 true이다.<br />
+      if (20 > 5 && "javari" === "javari") {<br />
+      console.log("yes");<br />
+      } else {<br />
+      console.log("no");<br />
+      }<br />
+      <br />
+      //||은 좌변과 우변중 하나만 true여도 true이다.<br />
+      if (20 < 5 || "javari" === "javari") {<br />
+      console.log("yes");<br />
+      } else {<br />
+      console.log("no");<br />
+      }<br />
+      //prompt는 유저에게 뭘 물어볼수 있는거다.<br />
+      const age = prompt("How old are you?");<br />
+      <br />
+      if (age >= 18 && age <= 21) {<br />
+      console.log("you can drink but you should not");<br />
+      } else if (age > 21) {<br />
+      console.log("go ahead");<br />
+      } else {<br />
+      console.log("too young");<br />
+      }
+    </h2>
+    <script src="index.js"></script>
+  </body>
+</html>
