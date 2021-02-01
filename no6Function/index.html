@@ -1,0 +1,82 @@
+<head>
+    <title>Something</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <h1>Function</h1>
+    <div>
+      <h2>
+        //'' , "" 는 둘다 모양만 다르고 같다.<br/>
+        //하지만 ``(백틱)는 완전 다름<br/>
+        //변수 입력시 ${매개변수}<br/>
+        <br/>
+        //함수의 매개변수를 지정하고 매개변수에 인수를 대입하여 중괄호안에 내용을 실행한다.<br/>
+        function sayHello(name, age) {<br/>
+          console.log(`hello ${name} you are ${age} years old`);<br/>
+        }<br/>
+        //출력문구:hello 재윤 you are 27 years old<br/>
+        <br/>
+        //인수 지정<br/>
+        sayHello("재윤", 27);<br/>
+        <br/>
+        //return : 함수의 데이터를 반환하고 종료함<br/>
+        function sayHelloyoon(name, age) {<br/>
+          return `hello ${name} you are ${age} years old`;<br/>
+        }<br/>
+        <br/>
+        const HelloYoon = sayHelloyoon("재바리", 30);<br/>
+        //리턴한 함수의 데이터를 HelloYoon에 저장한다.<br/>
+        console.log(HelloYoon);<br/>
+        //저장한HelloYoon을 출력한다.<br/>
+        //출력문구:hello 재바리 you are 30 years old<br/>
+        <br/>
+        //오브젝트 calculator안에 함수 plus:function에 파라메터(a,b)를 지정<br/>
+        //calculator.plus에서 인수(3,6)을 받아 함수를 호출<br/>
+        //a + b를 리턴하여 호출한곳에 상수변수plus에 저장<br/>
+        //console.log()를 통해 저장한 상수변수를 출력.<br/>
+        const calculator = {<br/>
+          plus: function (a, b) {<br/>
+            let result = 3;<br/>
+            for (let i = 1; i < 6; i++) {<br/>
+              result *= 3;<br/>
+            }<br/>
+            return result;<br/>
+          },<br/>
+        };<br/>
+        <br/>
+        const plus = calculator.plus(3, 6);<br/>
+        console.log(plus);<br/>
+        //<br/>
+        <br/>
+        const cal = {<br/>
+          plus: function (a, b) {<br/>
+            return a + b;<br/>
+          },<br/>
+          minus: function (a, b) {<br/>
+            return a - b;<br/>
+          },<br/>
+          multi: function (a, b) {<br/>
+            return a * b;<br/>
+          },<br/>
+          divide: function (a, b) {<br/>
+            return a / b;<br/>
+          },<br/>
+          remain: function (a, b) {<br/>
+            return a % b;<br/>
+          },<br/>
+          poewr: function (a, b) {<br/>
+          },<br/>
+        };<br/>
+        <br/>
+        const plus = cal.plus(2, 4);<br/>
+        const minus = cal.minus(2, 4);<br/>
+        const multi = cal.minus(2, 4);<br/>
+        const divide = cal.minus(2, 4);<br/>
+        const remain = cal.minus(2, 4);<br/>
+        const power = cal.minus(2, 4);<br/>
+        console.log(plus, minus, multi, divide, remain, power);<br/>
+      </h2>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

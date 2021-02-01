@@ -6,18 +6,19 @@
     <h1>Function</h1>
     <div>
       <h2>
-        //function 작성문법<br/>
-        function sayHello(/*변수명*/) {<br/>
-        console.log("Hello!" /*변수명*/);<br/>
+        //함수의 선언방법<br/>
+        function sayHello(/*매개변수*/) {<br/>
+        console.log("Hello!" /*매개변수*/);<br/>
         }<br/>
+       <br/>
+        //함수sayHello의 매개변수(name , age)에 인수(yoon , 27)을 대입하여 중괄호 내용을 출력한다.<br/>
+         function sayHello(name, age) {<br/>
+         console.log("hello", name, "you have", age, "years of age!");<br/>
+        } //출력문구: hello yoon you have 27 years of age!<br/>
         <br/>
-        function sayHello(name, age) {<br/>
-        console.log("hello", name, "you have", age, "years of age!");<br/>
-        }<br/>
-        //출력문구: hello yoon you have 27 years of age!<br/>
-        <br/>
+       //함수의 호출방법<br/>
+       //함수안에 인수를 선언<br/>
         sayHello("yoon", 27);<br/>
-        //변수의 값을 지정 (변수name은 "yoon",변수 age는 27)<br/>
       </h2>
     </div>
     <script src="index.js"></script>
