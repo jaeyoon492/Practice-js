@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>.classList</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+
+  <body>
+    <h1 id="title" class="btn">
+      TA DA!
+      <h3>TA DA!를 눌러보세요.</h3>
+    </h1>
+    <div>
+      /*이 코드를 해석하면 title엘리먼트에 clicked가 없으면 추가하고 종료<br />
+      또 클릭(이벤트)했을때는 clicked가 존재하니 clicked삭제하고 종료*/<br />
+      <br />
+      /*!는 부정을 뜻한다 이 코드에서는 if문에 hasclass가 아닐때 즉 class에
+      cliked가 없으면<br />
+      블럭을 실행한다 라는뜻 이다.*/<br />
+      <br />
+      const title = document.querySelector("#title");<br />
+      <br />
+      const CLICKED_CLASS = "clicked";<br />
+      <br />
+      function handleClick() {<br />
+      const hasClass = title.classList.contains(CLICKED_CLASS);<br />
+      if (!hasClass) {<br />
+      title.classList.add(CLICKED_CLASS);<br />
+      } else {<br />
+      title.classList.remove(CLICKED_CLASS);<br />
+      }<br />
+      }<br />
+      <br />
+      function init() {<br />
+      title.addEventListener("click", handleClick); //title이 클릭되면
+      handleClick펑션을 호출하라<br />
+      }<br />
+      init();
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

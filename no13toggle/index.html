@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>toggle</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+
+  <body>
+    <h1 id="title" class="btn">
+      TA DA!
+      <h3>TA DA!를 눌러보세요!</h3>
+    </h1>
+    <div>
+      /*classList.toggle(): 클래스값이 있는지 체크하고 없으면 더하고 있으면
+      제거한다. */<br />
+      <br />
+      const title = document.querySelector("#title");<br />
+      <br />
+      const CLICKED_CLASS = "clicked";<br />
+      <br />
+      function handleClick() {<br />
+      const hasClass = title.classList.contains(CLICKED_CLASS);<br />
+      title.classList.toggle(CLICKED_CLASS);<br />
+      }<br />
+      <br />
+      function init() {<br />
+      title.addEventListener("click", handleClick); //title이 클릭되면
+      handleClick펑션을 호출하라<br />
+      }<br />
+      init();<br />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

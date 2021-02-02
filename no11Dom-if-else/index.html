@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>-DOM if-eles</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+
+  <body>
+    <h1 id="title">
+      TA DA!
+      <h3>Ta DA!를 눌러보세요</h3>
+    </h1>
+    <div>
+      //메서드 .className은 해당엘리먼트에 클래스이름을 추가하는것<br />
+      <br />
+      /*아래 if문의 뜻은 if(title의 클래스 이름이 clicked가 아니면)<br />
+      {title에 클래스 이름을 clicked로 바꾼다.}*/<br />
+      <br />
+      /*그렇게 한바퀴돌고 또 클릭하여 handleClick펑션을 실행하면 <br />
+      title의 클래스 이름이 clicked 이므로 else문이 적용되 title의 이름이
+      clicked2로 변경됨.*/<br />
+      <br />
+      const title = document.querySelector("#title");<br />
+      <br />
+      const CLICKED_CLASS = "clicked";<br />
+      const CLICKED_CLASS2 = "clicked2";<br />
+      <br />
+      function handleClick() {<br />
+      const currentClass = title.className;<br />
+      if (currentClass !== CLICKED_CLASS) {<br />
+      title.className = CLICKED_CLASS;<br />
+      } else {<br />
+      title.className = CLICKED_CLASS2;<br />
+      }<br />
+      }<br />
+      <br />
+      function init() {<br />
+      title.addEventListener("click", handleClick); //title이 클릭되면
+      handleClick펑션을 호출하라<br />
+      }<br />
+      init();
+    </div>
+    <br />
+    <script src="index.js"></script>
+  </body>
+</html>
